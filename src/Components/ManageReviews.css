@@ -1,0 +1,136 @@
+.manage-reviews {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  
+  margin-top: 60px; /* Add space for the navbar */
+  margin-left: 240px; /* Sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.message {
+  color: green;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hotel-selector {
+  margin-bottom: 30px;
+}
+
+.hotel-selector h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hotel-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.hotel-card2 {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hotel-card2.active {
+  background-color: #d4edda;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reviews-section {
+  margin-top: 40px;
+}
+
+.reviews-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.reviews-table th,
+.reviews-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.reviews-table th {
+  background-color: #f1f1f1;
+  font-size: 1.1rem;
+}
+
+.reviews-table td {
+  font-size: 1rem;
+}
+
+.reviews-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .hotel-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-card {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .reviews-table th,
+  .reviews-table td {
+    font-size: 0.9rem;
+  }
+
+  .delete-button {
+    font-size: 0.9rem;
+  }
+}

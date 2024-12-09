@@ -1,0 +1,147 @@
+/* src/Components/UserManagement.css */
+
+/* Container for the entire user management page */
+.user-management {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 60px; /* Add space for the navbar */
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Add new user button styling */
+.add-user-btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.add-user-btn:hover {
+  background-color: #45a049;
+}
+
+/* Table styling */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: black;
+}
+
+.user-table td {
+  background-color: #fff;
+}
+
+/* Actions buttons */
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+/* Add a hover effect for table rows */
+.user-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 240px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100%;
+  position: fixed;
+  top: 85px; /* Move sidebar below the navbar */
+  left: 0;
+  z-index: 100;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+/* Ensure the user content doesn't hide behind the sidebar */
+.user-management {
+  margin-left: 240px; /* Sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: 0; /* Ensure sidebar appears below the navbar */
+  }
+
+  .user-management {
+    margin-left: 0;
+  }
+
+  .user-table th, .user-table td {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .add-user-btn {
+    font-size: 14px; /* Adjust button size for mobile */
+  }
+}

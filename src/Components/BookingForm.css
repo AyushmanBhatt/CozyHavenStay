@@ -1,0 +1,193 @@
+.booking-modal {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  max-height: 90vh;
+  margin: auto;
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.booking-modal h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.booking-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+label {
+  flex: 1;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.bill-section {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 48%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal overlay */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.header {
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8)), url("https://www.cvent.com/sites/default/files/image/2018-07/luxury-hotel.jpg");
+  background-size: cover;
+  padding: 20px;
+  color: white;
+}
+
+.header h1, .header p {
+  color: black;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.booking-form {
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+label {
+  flex: 0 0 48%;
+}
+
+button {
+  margin: 10px;
+}
+
+.form-errors {
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.form-errors ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.form-errors li {
+  margin-bottom: 5px;
+}
+
+.error-message {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.booking-modal .form-errors {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.booking-modal .form-errors ul {
+  margin: 0;
+}
+
+/* Ensure Modal Content Scrolls when Errors are Present */
+.booking-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Ensure Error Messages Appear Above Form */
+.booking-form {
+  padding-top: 30px;
+}
+
+.booking-modal .form-errors {
+  margin-top: 0;
+  margin-bottom: 20px;
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.booking-form .form-actions button {
+  background-color: #28a745;
+}
+
+.booking-form .form-actions button:hover {
+  background-color: #218838;
+}

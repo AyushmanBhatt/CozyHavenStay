@@ -1,0 +1,166 @@
+/* ManageHotel.css */
+
+/* Container styling */
+.manage-hotels {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  
+  background-color: #f9f9f9;
+  
+  margin-top: 60px; /* Add space for the navbar */
+  margin-left: 240px; /* Sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+/* Heading */
+.manage-hotels h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Success/Error message styling */
+.message {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4caf50; /* Success message */
+}
+
+.message.error {
+  background-color: #f44336; /* Error message */
+}
+
+/* Add New Hotel Button */
+.add-new-hotel-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-new-hotel-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hotel List */
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hotel-card2 {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hotel-card2 h3 {
+  margin: 10px 0;
+  color: #444;
+}
+
+.hotel-card2 p {
+  color: #666;
+}
+
+.hotel-card2 button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hotel-card2 button:hover {
+  background-color: #0056b3;
+}
+
+.hotel-card2 button:nth-child(2) {
+  background-color: #f44336;
+}
+
+.hotel-card2 button:nth-child(2):hover {
+  background-color: #d32f2f;
+}
+
+/* Hotel Form */
+.hotel-form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.hotel-form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #444;
+}
+
+.hotel-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.hotel-form input,
+.hotel-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.hotel-form button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hotel-form button:hover {
+  background-color: #0056b3;
+}
+
+.hotel-form button:nth-child(2) {
+  background-color: #6c757d;
+}
+
+.hotel-form button:nth-child(2):hover {
+  background-color: #5a6268;
+}

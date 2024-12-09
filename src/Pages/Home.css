@@ -1,0 +1,58 @@
+.hotel-list {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .hotel-list .hotel-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .hotel-list h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .hotel-cards-container {
+      justify-content: center;
+    }
+  }
+
+  .popular-locations-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .popular-locations-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+   /* Styles for the "View All Hotels" button */
+.hotel-list .view-all-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-all-button {
+  width: 200px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: #0056b3;
+}
+  

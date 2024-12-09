@@ -1,0 +1,107 @@
+/* Scoped styles for SearchResults */
+.searchResultsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.searchResultsContainer h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hotelList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.hotelItem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotelItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hotelItem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotelItem h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.hotelItem p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 10px;
+}
+
+
+  
+  
+  
+  
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue when hovering */
+}
+
+@media (max-width: 768px) {
+    .hotelItem h2 {
+        font-size: 1.25rem;
+    }
+
+    .hotelItem p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hotelList {
+        grid-template-columns: 1fr;
+    }
+
+    .hotelItem {
+        margin: 10px;
+    }
+}

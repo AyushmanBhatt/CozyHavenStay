@@ -1,0 +1,113 @@
+/* src/Components/ReviewManagement.css */
+
+/* Container for the entire review management page */
+.review-management {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 60px; /* Add space for the navbar */
+  margin-left: 240px; /* Sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 240px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100%;
+  position: fixed;
+  top: 85px; /* Move sidebar below the navbar */
+  left: 0;
+  z-index: 100;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+/* Table styling */
+.review-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.review-table th, .review-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.review-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: black;
+}
+
+.review-table td {
+  background-color: #fff;
+}
+
+/* Action buttons */
+.review-table .delete-btn {
+  background-color: #f54d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+}
+
+.delete-btn:hover {
+  background-color: #f70c08;
+}
+
+/* Hover effect for table rows */
+.review-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: 0; /* Ensure sidebar appears below the navbar */
+  }
+
+  .review-management {
+    margin-left: 0;
+  }
+
+  .review-table th, .review-table td {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}
